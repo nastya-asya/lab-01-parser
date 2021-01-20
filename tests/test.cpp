@@ -22,12 +22,12 @@ TEST(Parser, Empty_file) {
   Parser pars(getFullPath("example_json.json"));
   std::stringstream str;
   str << pars;
-  std::string str_example(R"(| name              | group  | avg  | debt         |
-|-------------------|--------|------|--------------|
-|    Petrov Petr    | IU8-33 | null | C++          |
-|-------------------|--------|------|--------------|
+  std::string str_example(R"(| name        | group  | avg  | debt         |
+|-------------|--------|------|--------------|
+| Petrov Petr | IU8-33 | null | C++          |
+|-------------|--------|------|--------------|
 )");
-  std::vector<size_t> column_width{19, 9, 7, 15};
+  std::vector<size_t> column_width{13, 9, 7, 15};
   std::vector<std::string> column_name{"name", "group", "avg", "debt"};
   ASSERT_EQ(str.str(), str_example);
 }
