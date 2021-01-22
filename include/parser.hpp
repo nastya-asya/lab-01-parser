@@ -1,7 +1,7 @@
 // Copyright 2020 Anastasiya Smirnova nastya.asya08@yandex.ru
 
-#ifndef INCLUDE_HEADER_HPP_
-#define INCLUDE_HEADER_HPP_
+#ifndef INCLUDE_PARSER_HPP_
+#define INCLUDE_PARSER_HPP_
 
 #include <string>
 #include <vector>
@@ -21,4 +21,4 @@ class Parser {
   std::vector<size_t> column_width{0, 9, 7, 15};
 };
 
-#endif // INCLUDE_HEADER_HPP_
+#endif // INCLUDE_PARSER_HPP_

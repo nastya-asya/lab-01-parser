@@ -1,6 +1,6 @@
 // Copyright 2020 Anastasiya Smirnova nastya.asya08@yandex.ru
 
-#include "header.hpp"
+#include "parser.hpp"
 
 Parser::Parser(const std::string& jsonPath) {
   json data;
