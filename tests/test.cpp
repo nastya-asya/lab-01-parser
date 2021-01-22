@@ -2,7 +2,7 @@
 
 #include <gtest/gtest.h>
 
-#include <header.hpp>
+#include <parser.hpp>
 #include <sstream>
 std::string getFullPath(const std::string& name) {
   std::string s(__FILE__);
